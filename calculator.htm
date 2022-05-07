@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	<script>
+// function for insert
+function insertvalue(num){
+		document.getElementById('textview').value+=num.value;
+		
+	}
+		// function for get javab
+     function result(){
+		document.getElementById('textview').value=eval(document.getElementById('textview').value);
+		
+	}
+    // function for clear
+	function cls(){
+		document.getElementById('textview').value='';
+	}
+	// function for get backspace
+		function bs(){
+			
+			var x=document.getElementById('textview').value;
+			document.getElementById('textview').value=x.substr(0,x.length-1);
+		}
+
+</script>
+	
+	
+	
+	<style>
+
+	
+table
+{
+width: 80px;
+height: 300px;
+
+border: 3px solid skyblue;
+border-radius: 5px;
+
+
+background-color: grey;
+}
+	
+	.btn{
+width:100px;
+height: 100px;
+font-size: 25px;
+background-color: mediumpurple;
+color: white;
+
+}
+		
+	.textview{
+width:98%;
+height: 70px;
+font-size: 25px;
+background-color: rgba(255,171,0,1.00);
+color: white;
+
+		}
+		
+			
+	.cvb{
+width:410%;
+height: 70px;
+font-size: 25px;
+background-color: rgba(47,99,165,1.00);
+color: white;
+
+		}
+
+	
+	</style>
+	
+	
+	
+	
+</head>
+
+<body>
+	
+
+
+	
+	
+	<table>
+<tr>
+		<td colspan="10"><input type="textview" class="textview" id="textview"></td>
+	</tr>
+	
+		<tr>
+			<td colspan  ="4"></td>
+			
+	<td><input class = "btn" type = "button" value = "1" onclick="insert(this)"> </td>
+	
+		<td><input class = "btn" type = "button" value = "2" onclick="insertvalue(this)"> </td>
+
+       <td>  <input class = "btn" type = "button" value = "3" onclick="insertvalue(this)"> </td>
+		
+   <td>  <input class = "btn" type = "button" value = "/" onclick="insertvalue(this)" alert="s"> </td>
+	
+	 </tr>
+	
+	<tr>
+		
+<td colspan  ="4"></td>
+	
+	<td><input class = "btn" type = "button" value = "4" onclick="insertvalue(this)" ></td>
+	
+		<td><input class = "btn" type = "button" value = "5" onclick="insertvalue(this)"> </td>
+
+     <td>   <input class = "btn" type = "button" value = "6" onclick="insertvalue(this)"> </td>
+		
+   <td>  <input class = "btn" type = "button" value = "*" onclick="insertvalue(this)"> </td>
+	
+	
+	</tr>
+		
+		<tr>
+		
+<td colspan  ="4"></td>
+	
+	<td><input class = "btn" type = "button" value = "7" onclick="insertvalue(this)" ></td>
+	
+	<td>	<input class = "btn" type = "button" value = "8" onclick = "insertvalue(this)" > </td>
+
+      <td>   <input class = "btn" type = "button" value = "9" onclick="insertvalue(this)"> </td>
+		
+  <td> <input class = "btn" type = "button" value = "-" onclick="insertvalue(this)"> </td>
+	
+	
+	</tr>
+		
+				
+	<tr>
+		
+
+				<td colspan  ="4"></td>
+
+	<td><input class = "btn" type = "button" value = "0" onclick="insertvalue(this)"></td>
+	
+	<td>	<input class = "btn" type = "button" value = "CE" onclick="bs()"> </td>
+		
+  <td> <input class = "btn" type = "button" value = "c" onclick="cls()"> </td>
+	
+	<td><input class = "btn" type = "button" value = "+" onclick="insertvalue(this)"> </td>
+	</tr>
+	
+		
+		<tr>
+
+<td colspan  ="4"></td>
+	
+	<td>	<input class = "cvb" type = "button" value = "=" onclick="result()"> </td>
+			
+				</tr>
+		
+	
+		</table>
+	
+	
+	
+</body>
+</html>
